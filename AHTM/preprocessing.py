@@ -1,12 +1,16 @@
 # coding:utf-8
-"""
-this is data preprocessing for open source code: d3_3.5.17.js
-by Jeffery Zhou
-"""
+import sys
 import codecs
 import nltk
 from remove_word.punctuation import punc_lst
 import logging
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+"""
+this is data preprocessing for open source code: d3_3.5.17.js
+by Jeffery Zhou
+"""
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
@@ -19,8 +23,8 @@ class Preprocess(object):
     """
         this is the data preprocessing class;
     """
-
-    code_path = "./source_code/d3_test.js"
+    # code_path = "./source_code/d3_test.js"
+    code_path = "./source_code/d3_3.5.17.js"
     keyword_html_path = "./remove_word/keywords_html.txt"
     keyword_built_path = "./remove_word/built_in_object.txt"
     keyword_css_path = "./remove_word/keywords_css.txt"
@@ -60,7 +64,10 @@ class Preprocess(object):
 
     def word_tokenize(self):
         code = self.code
-        self.code = nltk.word_tokenize(code)
+        # self.code = nltk.word_tokenize(code)
+
+        tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
+        self.code = tokenizer.tokenize(self.code)
 
     def keep_word_combination(self, code):
         pass
@@ -91,7 +98,22 @@ class Preprocess(object):
         :param remove_lst:
         :return:
         """
-        return [i for i in code if i not in remove_lst]
+        self.code = [i for i in code if i not in remove_lst]
+
+    def remove_operation_class(self, ):
+        """
+        处理类的运算符: .
+        process the operation of class: .
+        """
+        pass
+
+    def process_word_combination(self, ):
+        pass
+
+    def get_freq(self):
+        fr_dct = nltk.FreqDist(self.code)
+        # nltk.FreqDist.plot(fr_dct)
+        return fr_dct
 
     # =========================================================
     def get_keyword(self):
@@ -145,18 +167,51 @@ class Preprocess(object):
         for i in range(10):
             print '-',
         print '\n'
-        print "\t", content, '\n'
+        print content, '\n'
+        # print '\n'
+        # for i in range(20+len(info)):
+        #     print '-',
         # print '\n'
 
-        for i in range(20+len(info)):
-            print '-',
-        print '\n'
-
 p = Preprocess()
-p.printer("code start", p.code)
+# p.printer("code start", p.code)
 p.word_tokenize()
 p.printer("code after tokenizing", p.code)
 p.printer("keyword in JS", p.keywords_js)
+p.remove_what2(p.code, p.keywords_js)
+p.printer("code after removing keywords", p.code)
+p.remove_what2(p.code, p.punctuation_lst)
+p.printer("code after removing punctuation", p.code)
+
+freq_dct = p.get_freq()
+p.printer("code freq ", freq_dct)
+
+# for i in freq_dct.iteritems():
+#     print i
+
+# fd = freq_dct
+fd = freq_dct
+fd_keys_sorted = (key for key, value in sorted(fd.items(), key=lambda item: item[1], reverse=True))
+
+count_dict = 0
+for key in fd_keys_sorted:
+    if count_dict < 100:
+        print key, fd[key]
+    count_dict += 1
+
+# nltk.download()
+# nltk.probability.gt_demo()
+# print freq_dct[]
+# print type(freq_dct[''])
+# print type(freq_dct)
+# freq_dct_sorted = sorted(freq_dct.iteritems(), key=lambda d: d[1], reverse=True)
+#
+# for i in freq_dct_sorted:
+#     print i
+
+
+
+
 
 
 
