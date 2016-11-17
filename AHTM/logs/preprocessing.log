@@ -1,4 +1,50 @@
-Wed, 16 Nov 2016 21:27:23 preprocessing.py[line:38] INFO object initializing...
-Wed, 16 Nov 2016 21:27:23 preprocessing.py[line:40] INFO punctuation archiving...
-Wed, 16 Nov 2016 21:27:23 preprocessing.py[line:42] INFO got keyword for js!
-Wed, 16 Nov 2016 21:27:23 preprocessing.py[line:55] INFO got code!
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:38] INFO object initializing...
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:40] INFO punctuation archiving...
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:42] INFO got keyword for js!
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:55] INFO got code!
+Thu, 17 Nov 2016 17:57:25 doc2vec.py[line:63] DEBUG Fast version of gensim.models.doc2vec is being used
+Thu, 17 Nov 2016 17:57:25 textcleaner.py[line:20] INFO 'pattern' package not found; tag filters are not available for English
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:38] INFO object initializing...
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:40] INFO punctuation archiving...
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:42] INFO got keyword for js!
+Thu, 17 Nov 2016 17:57:25 preprocessing.py[line:55] INFO got code!
+Thu, 17 Nov 2016 17:57:25 dictionary.py[line:116] INFO adding document #0 to Dictionary(0 unique tokens: [])
+Thu, 17 Nov 2016 17:57:25 dictionary.py[line:123] INFO built Dictionary(116 unique tokens: [u'random', u'd3_bisect', u'mid', u'd3', u'Math']...) from 1 documents (total 773 corpus positions)
+Thu, 17 Nov 2016 17:57:25 tfidfmodel.py[line:112] INFO collecting document frequencies
+Thu, 17 Nov 2016 17:57:25 tfidfmodel.py[line:117] INFO PROGRESS: processing document #0
+Thu, 17 Nov 2016 17:57:25 tfidfmodel.py[line:130] INFO calculating IDF weights for 1 documents and 115 features (116 matrix non-zeros)
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:358] INFO using symmetric alpha at 0.1
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:358] INFO using symmetric eta at 0.1
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:319] INFO using serial LDA version on this node
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:627] INFO running online LDA training, 10 topics, 1 passes over the supplied corpus of 1 documents, updating model once every 1 documents, evaluating perplexity every 1 documents, iterating 50x with a convergence threshold of 0.001000
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:630] WARNING too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:742] DEBUG bound: at document #0
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:545] INFO -inf per-word bound, inf perplexity estimate based on a held-out corpus of 1 documents with 0 words
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:662] INFO PROGRESS: pass 0, at document #1/1
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:707] DEBUG updating topics
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:808] INFO topic #3 (0.100): 0.009*"17" + 0.009*"f" + 0.009*"defaultView" + 0.009*"p0" + 0.009*"b" + 0.009*"d3_transposeLength" + 0.009*"setProperty" + 0.009*"n" + 0.009*"setAttribute" + 0.009*"hi"
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:808] INFO topic #2 (0.100): 0.009*"17" + 0.009*"f" + 0.009*"defaultView" + 0.009*"p0" + 0.009*"b" + 0.009*"d3_transposeLength" + 0.009*"setProperty" + 0.009*"n" + 0.009*"setAttribute" + 0.009*"hi"
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:808] INFO topic #8 (0.100): 0.009*"17" + 0.009*"f" + 0.009*"defaultView" + 0.009*"p0" + 0.009*"b" + 0.009*"d3_transposeLength" + 0.009*"setProperty" + 0.009*"n" + 0.009*"setAttribute" + 0.009*"hi"
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:808] INFO topic #5 (0.100): 0.009*"17" + 0.009*"f" + 0.009*"defaultView" + 0.009*"p0" + 0.009*"b" + 0.009*"d3_transposeLength" + 0.009*"setProperty" + 0.009*"n" + 0.009*"setAttribute" + 0.009*"hi"
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:808] INFO topic #6 (0.100): 0.009*"17" + 0.009*"f" + 0.009*"defaultView" + 0.009*"p0" + 0.009*"b" + 0.009*"d3_transposeLength" + 0.009*"setProperty" + 0.009*"n" + 0.009*"setAttribute" + 0.009*"hi"
+Thu, 17 Nov 2016 17:57:25 ldamodel.py[line:717] INFO topic diff=7.492575, rho=1.000000
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (0, u'0.049*1 + 0.036*CSSStyleDeclaration + 0.031*v + 0.026*e + 0.026*lo + 0.025*5 + 0.024*extent + 0.022*opacity + 0.021*x + 0.021*d3_ascending')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (1, u'0.045*quantile + 0.045*mid + 0.045*Array + 0.044*name + 0.038*transpose + 0.024*random + 0.023*sqrt + 0.022*median + 0.022*node + 0.021*style')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (2, u'0.036*value + 0.035*array + 0.031*values + 0.028*2 + 0.028*CSSStyleDeclaration + 0.027*permute + 0.026*b + 0.025*indexes + 0.024*right + 0.023*length')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (3, u'0.030*d3_style_setProperty + 0.028*CSSStyleDeclaration + 0.027*d3_element_prototype + 0.025*defaultView + 0.023*version + 0.022*childNodes + 0.022*style + 0.022*sum + 0.020*documentElement + 0.020*bisector')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (4, u'0.047*DIV + 0.042*4 + 0.037*a + 0.036*setProperty + 0.022*d3_style_setProperty + 0.021*d3_element_setAttribute + 0.021*variance + 0.021*d3_document + 0.021*s + 0.020*p0')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (5, u'0.033*left + 0.029*call + 0.028*now + 0.025*push + 0.024*local + 0.024*a + 0.022*array + 0.022*shuffle + 0.020*d3_number + 0.020*1')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (6, u'0.040*d3_window + 0.036*documentElement + 0.034*sum + 0.033*CSSStyleDeclaration + 0.031*e + 0.030*local + 0.023*setAttribute + 0.022*Element + 0.022*values + 0.021*d3_bisector')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (7, u'0.052*Math + 0.044*v + 0.041*bisect + 0.038*defaultView + 0.033*CSSStyleDeclaration + 0.032*lo + 0.030*d3_number + 0.030*sort + 0.029*sum + 0.023*name')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (8, u'0.044*sqrt + 0.036*setProperty + 0.032*mid + 0.031*values + 0.029*extent + 0.025*d3_bisect + 0.025*transpose + 0.023*t + 0.023*error + 0.023*n')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (9, u'0.050*length + 0.036*nodeType + 0.034*bisect + 0.034*matrix + 0.029*quantile + 0.027*h + 0.026*median + 0.024*local + 0.024*indexes + 0.023*d3_style_prototype')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (10, u'0.042*style + 0.036*Array + 0.030*5 + 0.030*left + 0.027*sum + 0.023*4 + 0.021*Date + 0.021*nodeType + 0.020*documentElement + 0.020*d3_documentElement')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (11, u'0.034*descending + 0.027*permute + 0.026*local + 0.024*apply + 0.023*x + 0.023*d3_transposeLength + 0.021*a + 0.020*document + 0.020*floor + 0.019*version')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (12, u'0.045*prototype + 0.041*array + 0.033*matrix + 0.032*sum + 0.032*H + 0.028*median + 0.026*DIV + 0.025*space + 0.025*transpose + 0.024*slice')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (13, u'0.071*1 + 0.038*b + 0.038*name + 0.036*createElement + 0.027*e + 0.026*Math + 0.026*d3 + 0.026*DIV + 0.024*d3_bisector + 0.023*median')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (14, u'0.049*d3_style_setProperty + 0.045*ascending + 0.025*bisect + 0.023*setAttribute + 0.023*extent + 0.022*median + 0.022*t + 0.020*i1 + 0.019*style + 0.019*right')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (15, u'0.042*nodeType + 0.039*sum + 0.036*e + 0.031*variance + 0.027*v + 0.027*bisector + 0.023*3 + 0.022*bisectLeft + 0.022*defaultView + 0.021*d3_number')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (16, u'0.032*setProperty + 0.028*i0 + 0.027*Element + 0.027*createElement + 0.025*sqrt + 0.025*right + 0.025*d3_element_setAttribute + 0.024*d3_transposeLength + 0.022*d3_style_setProperty + 0.022*setAttributeNS')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (17, u'0.048*Array + 0.032*now + 0.029*bisector + 0.027*matrix + 0.027*sort + 0.027*d3_window + 0.025*setAttributeNS + 0.024*indexes + 0.024*ownerDocument + 0.024*median')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (18, u'0.051*c + 0.034*p0 + 0.030*ownerDocument + 0.024*1 + 0.024*opacity + 0.023*mean + 0.021*d3_document + 0.021*quantile + 0.020*extent + 0.020*j')
+Thu, 17 Nov 2016 17:57:25 hdpmodel.py[line:578] INFO (19, u'0.036*d3_arraySlice + 0.035*d3_bisector + 0.030*isNaN + 0.028*floor + 0.028*d3_style_setProperty + 0.026*setAttribute + 0.025*H + 0.025*random + 0.024*d3_style_prototype + 0.021*quantile')

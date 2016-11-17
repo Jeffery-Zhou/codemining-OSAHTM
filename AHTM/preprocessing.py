@@ -23,8 +23,8 @@ class Preprocess(object):
     """
         this is the data preprocessing class;
     """
-    # code_path = "./source_code/d3_test.js"
-    code_path = "./source_code/d3_3.5.17.js"
+    code_path = "./source_code/d3_test.js"
+    # code_path = "./source_code/d3_3.5.17.js"
     keyword_html_path = "./remove_word/keywords_html.txt"
     keyword_built_path = "./remove_word/built_in_object.txt"
     keyword_css_path = "./remove_word/keywords_css.txt"
