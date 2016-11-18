@@ -9,20 +9,9 @@ from preprocessing import Preprocess
 from gensim import corpora, models, similarities
 
 p = Preprocess()
+print "\n"
 
-p.word_tokenize()
-p.printer("code after tokenizing", p.code)
-
-p.remove_what2(p.code, p.keywords_js)
-p.printer("code after removing keywords", p.code)
-
-p.remove_what2(p.code, p.punctuation_lst)
-p.printer("code after removing punctuation", p.code)
-
-print type(p.code)
-
-train_set = []
-train_set.append(p.code)
+train_set = p.multi_process()
 
 dic = corpora.Dictionary(train_set)
 
@@ -32,18 +21,20 @@ tfidf = models.TfidfModel(corpus)
 
 corpus_tfidf = tfidf[corpus]
 
-lda = models.LdaModel(corpus_tfidf, id2word = dic, num_topics = 10)
+lda = models.LdaModel(corpus_tfidf, id2word=dic, num_topics=31)
 
-hdp = models.HdpModel(corpus_tfidf, id2word= dic)
+lsa = models.LsiModel(corpus_tfidf, id2word=dic, num_topics=31)
 
-print hdp.print_topic(0)
-# print hdp.print_topic(1)
-# corpus_lda = lda[corpus_tfidf]
+corpus_lda = lda[corpus_tfidf]
 
-# lda = models.LdaModel(document, num_topics=10)
-# print (lda[doc_bow])
-for i in range(0, 10):
-    print lda.show_topic(i, 10)
-    print lda.get_topic_terms(i)
+print "LDA results:"
+for i in range(0, 31):
+    print lda.print_topic(i, 30)
+
+print "LSA results:"
+for i in range(0, 31):
+    print lsa.print_topic(i, 30)
+
+
 
 
