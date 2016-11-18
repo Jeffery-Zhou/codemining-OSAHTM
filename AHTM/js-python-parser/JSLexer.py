@@ -54,6 +54,8 @@ def isIDStart(c):
 
 
 def isIDPart(c):
+    # return isIDStart(c)
+    # c = Unicode()
     return isIDStart(c) or c.isnumeric()
 
 

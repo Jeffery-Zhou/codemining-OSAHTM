@@ -1,4 +1,5 @@
 # coding:utf-8
+import os
 import sys
 import codecs
 import nltk
@@ -30,6 +31,35 @@ class Preprocess(object):
     keyword_css_path = "./remove_word/keywords_css.txt"
     stop_word_path = "./remove_word/stop_words.txt"
     reserved_keyword_js_path = "./remove_word/reserved_keywords_js.txt"
+    code_echarts_path = "./source_code/echarts"
+
+    def multi_process(self):
+        train_set = []
+        walk = os.walk(Preprocess.code_echarts_path)
+        name_no = 0
+        for root, dirs, files in walk:
+            for name in files:
+                name_no += 1
+                print name, name_no
+
+                f = codecs.open(os.path.join(root, name), 'r', 'utf-8')
+                raw = f.read()
+                f.close()
+                tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
+                raw_ = tokenizer.tokenize(raw)
+                raw__ = self.remove_what2(raw_, self.keywords_js)
+                train_set.append(raw__)
+        return train_set
+        # raw = f.read()
+        # word_list = list(jieba.cut(raw, cut_all=False))
+        # train_set.append(word_list)
+
+
+
+
+
+        pass
+
 
     def __init__(self):
         """
@@ -54,6 +84,13 @@ class Preprocess(object):
         code_file.close()
         logging.info("got code!")
         return code
+
+    def get_code_multifile(self):
+        """
+
+        :return:
+        """
+        pass
 
     def get_what_word(self, path):
         word_file = codecs.open(path, 'r')
@@ -98,7 +135,8 @@ class Preprocess(object):
         :param remove_lst:
         :return:
         """
-        self.code = [i for i in code if i not in remove_lst]
+        # self.code = [i for i in code if i not in remove_lst]
+        return [i for i in code if i not in remove_lst]
 
     def remove_operation_class(self, ):
         """
