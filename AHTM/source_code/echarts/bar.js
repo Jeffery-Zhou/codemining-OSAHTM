@@ -3209,6 +3209,7 @@ define('echarts/view/Component', ['require', 'zrender/container/Group', '../util
     clazzUtil.enableClassManagement(Component, { registerWhenExtend: true });
     return Component;
 });
+
 define('echarts/view/Chart', ['require', 'zrender/container/Group', '../util/component', '../util/clazz', '../util/model', 'zrender/core/util'], function (require) {
     var Group = require('zrender/container/Group');
     var componentUtil = require('../util/component');

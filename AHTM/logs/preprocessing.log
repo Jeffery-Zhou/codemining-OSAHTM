@@ -1,52 +1,53 @@
-Fri, 18 Nov 2016 11:53:22 preprocessing.py[line:68] INFO object initializing...
-Fri, 18 Nov 2016 11:53:22 preprocessing.py[line:70] INFO punctuation archiving...
-Fri, 18 Nov 2016 11:53:22 preprocessing.py[line:72] INFO got keyword for js!
-Fri, 18 Nov 2016 11:53:22 preprocessing.py[line:85] INFO got code!
-Fri, 18 Nov 2016 11:53:23 doc2vec.py[line:63] DEBUG Fast version of gensim.models.doc2vec is being used
-Fri, 18 Nov 2016 11:53:23 textcleaner.py[line:17] INFO 'pattern' package found; tag filters are available for English
-Fri, 18 Nov 2016 11:53:23 preprocessing.py[line:68] INFO object initializing...
-Fri, 18 Nov 2016 11:53:23 preprocessing.py[line:70] INFO punctuation archiving...
-Fri, 18 Nov 2016 11:53:23 preprocessing.py[line:72] INFO got keyword for js!
-Fri, 18 Nov 2016 11:53:23 preprocessing.py[line:85] INFO got code!
-Fri, 18 Nov 2016 11:53:35 dictionary.py[line:116] INFO adding document #0 to Dictionary(0 unique tokens: [])
-Fri, 18 Nov 2016 11:53:36 dictionary.py[line:123] INFO built Dictionary(9143 unique tokens: [u'_children', u'areaWidth', u'calculateCandleWidth', u'yellow', u'factory']...) from 31 documents (total 1611119 corpus positions)
-Fri, 18 Nov 2016 11:53:37 tfidfmodel.py[line:112] INFO collecting document frequencies
-Fri, 18 Nov 2016 11:53:37 tfidfmodel.py[line:117] INFO PROGRESS: processing document #0
-Fri, 18 Nov 2016 11:53:37 tfidfmodel.py[line:130] INFO calculating IDF weights for 31 documents and 9142 features (154729 matrix non-zeros)
-Fri, 18 Nov 2016 11:53:37 ldamodel.py[line:358] INFO using symmetric alpha at 0.0322580645161
-Fri, 18 Nov 2016 11:53:37 ldamodel.py[line:358] INFO using symmetric eta at 0.0322580645161
-Fri, 18 Nov 2016 11:53:37 ldamodel.py[line:319] INFO using serial LDA version on this node
-Fri, 18 Nov 2016 11:53:38 ldamodel.py[line:627] INFO running online LDA training, 31 topics, 1 passes over the supplied corpus of 31 documents, updating model once every 31 documents, evaluating perplexity every 31 documents, iterating 50x with a convergence threshold of 0.001000
-Fri, 18 Nov 2016 11:53:38 ldamodel.py[line:630] WARNING too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:742] DEBUG bound: at document #0
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:545] INFO -1932.586 per-word bound, inf perplexity estimate based on a held-out corpus of 31 documents with 319 words
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:662] INFO PROGRESS: pass 0, at document #31/31
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:425] DEBUG performing inference on a chunk of 31 documents
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:481] DEBUG 30/31 documents converged within 50 iterations
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:707] DEBUG updating topics
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:808] INFO topic #25 (0.032): 0.000*"axisModel" + 0.000*"titleModel" + 0.000*"lineData" + 0.000*"posInfo" + 0.000*"layoutRect" + 0.000*"symbolType" + 0.000*"seriesScope" + 0.000*"getColor" + 0.000*"sublink" + 0.000*"symbolPath"
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:808] INFO topic #15 (0.032): 0.001*"brushOption" + 0.001*"controller" + 0.001*"brushModel" + 0.001*"coordInfo" + 0.001*"panel" + 0.001*"brushType" + 0.001*"panelId" + 0.001*"minMax" + 0.001*"rangeInfoList" + 0.001*"coordInfoList"
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:808] INFO topic #17 (0.032): 0.000*"axisModel" + 0.000*"titleModel" + 0.000*"posInfo" + 0.000*"layoutRect" + 0.000*"getColor" + 0.000*"lineData" + 0.000*"sublink" + 0.000*"symbolType" + 0.000*"axisHelper" + 0.000*"markerModel"
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:808] INFO topic #24 (0.032): 0.000*"axisModel" + 0.000*"titleModel" + 0.000*"lineData" + 0.000*"layoutRect" + 0.000*"posInfo" + 0.000*"seriesScope" + 0.000*"areaData" + 0.000*"symbolType" + 0.000*"sublink" + 0.000*"symbolPath"
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:808] INFO topic #12 (0.032): 0.000*"axisModel" + 0.000*"titleModel" + 0.000*"posInfo" + 0.000*"layoutRect" + 0.000*"symbolType" + 0.000*"lineData" + 0.000*"seriesScope" + 0.000*"getColor" + 0.000*"axisHelper" + 0.000*"controller"
-Fri, 18 Nov 2016 11:53:40 ldamodel.py[line:717] INFO topic diff=27.127104, rho=1.000000
-Fri, 18 Nov 2016 11:53:40 lsimodel.py[line:308] INFO using serial LSI version on this node
-Fri, 18 Nov 2016 11:53:40 lsimodel.py[line:349] INFO updating model with new documents
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:374] INFO preparing a new chunk of documents
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:378] DEBUG converting corpus to csc format
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:636] INFO using 100 extra samples and 2 power iterations
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:644] INFO 1st phase: constructing (9143, 131) action matrix
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:659] INFO orthonormalizing (9143, 131) action matrix
-Fri, 18 Nov 2016 11:53:41 matutils.py[line:539] DEBUG computing QR of (9143, 131) dense matrix
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:663] DEBUG running 2 power iterations
-Fri, 18 Nov 2016 11:53:41 matutils.py[line:539] DEBUG computing QR of (9143, 131) dense matrix
-Fri, 18 Nov 2016 11:53:41 matutils.py[line:539] DEBUG computing QR of (9143, 131) dense matrix
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:708] INFO 2nd phase: running dense svd on (131, 31) matrix
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:732] INFO computing the final decomposition
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:91] INFO keeping 31 factors (discarding 0.000% of energy spectrum)
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:394] INFO processed documents up to #31
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:517] INFO topic #0(2.033): 0.599*"axisModel" + 0.229*"gridModel" + 0.155*"cartesian" + 0.154*"axisHelper" + 0.124*"gridRect" + 0.114*"labelInterval" + 0.109*"axisPosition" + 0.105*"textEl" + 0.098*"isHorizontal" + 0.098*"axisType"
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:517] INFO topic #1(1.489): 0.486*"lineData" + 0.253*"seriesScope" + 0.235*"symbolType" + 0.164*"edges" + 0.161*"symbolPath" + 0.158*"nodes" + -0.132*"axisModel" + 0.115*"markerGroupMap" + 0.115*"n2" + 0.115*"n1"
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:517] INFO topic #2(1.442): -0.372*"controller" + -0.311*"brushOption" + -0.219*"dataZoomModel" + -0.192*"panel" + -0.177*"coordInfo" + -0.152*"dimNames" + -0.129*"panelId" + -0.122*"axisIndex" + -0.120*"geoJson" + -0.109*"regions"
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:517] INFO topic #3(1.374): -0.306*"geoJson" + -0.279*"regions" + -0.268*"mapOrGeoModel" + -0.243*"region" + -0.182*"contours" + -0.153*"Geo" + 0.145*"brushOption" + 0.144*"lineData" + 0.137*"controller" + -0.135*"zoomLimit"
-Fri, 18 Nov 2016 11:53:41 lsimodel.py[line:517] INFO topic #4(1.260): 0.284*"styleUpdater" + 0.248*"whiskerEnds" + 0.237*"WhiskerBoxDraw" + 0.213*"whiskerBoxCommon" + 0.191*"itemLayout" + 0.189*"bodyEnds" + 0.178*"constDim" + 0.177*"variableDim" + 0.154*"getPoint" + 0.147*"groupItem"
+Sat, 26 Nov 2016 22:20:54 preprocessing.py[line:68] INFO object initializing...
+Sat, 26 Nov 2016 22:20:54 preprocessing.py[line:70] INFO punctuation archiving...
+Sat, 26 Nov 2016 22:20:54 preprocessing.py[line:72] INFO got keyword for js!
+Sat, 26 Nov 2016 22:20:54 preprocessing.py[line:85] INFO got code!
+Sat, 26 Nov 2016 22:20:55 doc2vec.py[line:63] DEBUG Fast version of gensim.models.doc2vec is being used
+Sat, 26 Nov 2016 22:20:55 textcleaner.py[line:17] INFO 'pattern' package found; tag filters are available for English
+Sat, 26 Nov 2016 22:20:56 preprocessing.py[line:68] INFO object initializing...
+Sat, 26 Nov 2016 22:20:56 preprocessing.py[line:70] INFO punctuation archiving...
+Sat, 26 Nov 2016 22:20:56 preprocessing.py[line:72] INFO got keyword for js!
+Sat, 26 Nov 2016 22:20:56 preprocessing.py[line:85] INFO got code!
+Sat, 26 Nov 2016 22:21:09 dictionary.py[line:116] INFO adding document #0 to Dictionary(0 unique tokens: [])
+Sat, 26 Nov 2016 22:21:11 dictionary.py[line:123] INFO built Dictionary(9143 unique tokens: [u'_children', u'areaWidth', u'calculateCandleWidth', u'yellow', u'factory']...) from 31 documents (total 1611119 corpus positions)
+Sat, 26 Nov 2016 22:21:11 dictionary.py[line:281] INFO saving dictionary mapping to dic1_AHTM
+Sat, 26 Nov 2016 22:21:12 tfidfmodel.py[line:112] INFO collecting document frequencies
+Sat, 26 Nov 2016 22:21:12 tfidfmodel.py[line:117] INFO PROGRESS: processing document #0
+Sat, 26 Nov 2016 22:21:12 tfidfmodel.py[line:130] INFO calculating IDF weights for 31 documents and 9142 features (154729 matrix non-zeros)
+Sat, 26 Nov 2016 22:21:12 ldamodel.py[line:358] INFO using symmetric alpha at 0.0322580645161
+Sat, 26 Nov 2016 22:21:12 ldamodel.py[line:358] INFO using symmetric eta at 0.0322580645161
+Sat, 26 Nov 2016 22:21:12 ldamodel.py[line:319] INFO using serial LDA version on this node
+Sat, 26 Nov 2016 22:21:12 ldamodel.py[line:627] INFO running online LDA training, 31 topics, 1 passes over the supplied corpus of 31 documents, updating model once every 31 documents, evaluating perplexity every 31 documents, iterating 50x with a convergence threshold of 0.001000
+Sat, 26 Nov 2016 22:21:12 ldamodel.py[line:630] WARNING too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:742] DEBUG bound: at document #0
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:545] INFO -1932.572 per-word bound, inf perplexity estimate based on a held-out corpus of 31 documents with 319 words
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:662] INFO PROGRESS: pass 0, at document #31/31
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:425] DEBUG performing inference on a chunk of 31 documents
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:481] DEBUG 29/31 documents converged within 50 iterations
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:707] DEBUG updating topics
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:808] INFO topic #0 (0.032): 0.001*"styleUpdater" + 0.001*"closeVal" + 0.001*"openVal" + 0.001*"WhiskerBoxDraw" + 0.001*"whiskerBoxCommon" + 0.001*"whiskerEnds" + 0.001*"constDim" + 0.001*"candleWidth" + 0.001*"itemLayout" + 0.001*"bodyEnds"
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:808] INFO topic #13 (0.032): 0.001*"symbolPath" + 0.001*"seriesScope" + 0.001*"mpModel" + 0.001*"symbolType" + 0.001*"markerGroupMap" + 0.001*"markerModel" + 0.001*"symbolProto" + 0.001*"symbolEl" + 0.001*"MarkerModel" + 0.001*"SymbolDraw"
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:808] INFO topic #5 (0.032): 0.000*"axisModel" + 0.000*"titleModel" + 0.000*"lineData" + 0.000*"symbolType" + 0.000*"layoutRect" + 0.000*"subTextEl" + 0.000*"posInfo" + 0.000*"seriesScope" + 0.000*"controller" + 0.000*"symbolPath"
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:808] INFO topic #4 (0.032): 0.002*"axisModel" + 0.001*"SingleAxis" + 0.001*"Single" + 0.001*"axisHelper" + 0.001*"isHorizontal" + 0.001*"_axis" + 0.000*"textEl" + 0.000*"labelInterval" + 0.000*"AxisBuilder" + 0.000*"singleAxis"
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:808] INFO topic #17 (0.032): 0.001*"minOpacity" + 0.001*"maxOpacity" + 0.001*"categoryAxesModels" + 0.001*"pointSize" + 0.001*"pixels" + 0.001*"blurSize" + 0.001*"Heatmap" + 0.001*"hmLayer" + 0.001*"visualMapModel" + 0.001*"pixelsSingleState"
+Sat, 26 Nov 2016 22:21:13 ldamodel.py[line:717] INFO topic diff=27.105125, rho=1.000000
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:308] INFO using serial LSI version on this node
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:349] INFO updating model with new documents
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:374] INFO preparing a new chunk of documents
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:378] DEBUG converting corpus to csc format
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:636] INFO using 100 extra samples and 2 power iterations
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:644] INFO 1st phase: constructing (9143, 131) action matrix
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:659] INFO orthonormalizing (9143, 131) action matrix
+Sat, 26 Nov 2016 22:21:14 matutils.py[line:539] DEBUG computing QR of (9143, 131) dense matrix
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:663] DEBUG running 2 power iterations
+Sat, 26 Nov 2016 22:21:14 matutils.py[line:539] DEBUG computing QR of (9143, 131) dense matrix
+Sat, 26 Nov 2016 22:21:14 matutils.py[line:539] DEBUG computing QR of (9143, 131) dense matrix
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:708] INFO 2nd phase: running dense svd on (131, 31) matrix
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:732] INFO computing the final decomposition
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:91] INFO keeping 31 factors (discarding 0.000% of energy spectrum)
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:394] INFO processed documents up to #31
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:517] INFO topic #0(2.033): -0.599*"axisModel" + -0.229*"gridModel" + -0.155*"cartesian" + -0.154*"axisHelper" + -0.124*"gridRect" + -0.114*"labelInterval" + -0.109*"axisPosition" + -0.105*"textEl" + -0.098*"isHorizontal" + -0.098*"axisType"
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:517] INFO topic #1(1.489): -0.486*"lineData" + -0.253*"seriesScope" + -0.235*"symbolType" + -0.164*"edges" + -0.161*"symbolPath" + -0.158*"nodes" + 0.132*"axisModel" + -0.115*"markerGroupMap" + -0.115*"n1" + -0.115*"n2"
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:517] INFO topic #2(1.442): 0.372*"controller" + 0.311*"brushOption" + 0.219*"dataZoomModel" + 0.192*"panel" + 0.177*"coordInfo" + 0.152*"dimNames" + 0.129*"panelId" + 0.122*"axisIndex" + 0.120*"geoJson" + 0.109*"regions"
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:517] INFO topic #3(1.374): 0.306*"geoJson" + 0.279*"regions" + 0.268*"mapOrGeoModel" + 0.243*"region" + 0.182*"contours" + 0.153*"Geo" + -0.145*"brushOption" + -0.144*"lineData" + -0.137*"controller" + 0.135*"zoomLimit"
+Sat, 26 Nov 2016 22:21:14 lsimodel.py[line:517] INFO topic #4(1.260): -0.284*"styleUpdater" + -0.248*"whiskerEnds" + -0.237*"WhiskerBoxDraw" + -0.213*"whiskerBoxCommon" + -0.191*"itemLayout" + -0.189*"bodyEnds" + -0.178*"constDim" + -0.177*"variableDim" + -0.154*"getPoint" + -0.147*"groupItem"
