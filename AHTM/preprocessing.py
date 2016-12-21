@@ -37,19 +37,26 @@ class Preprocess(object):
         train_set = []
         walk = os.walk(Preprocess.code_echarts_path)
         name_no = 0
+        before_lst = []  # the num of word before the preprocessing
+        after_lst = []  # the num of word after the preprocessing
         for root, dirs, files in walk:
             for name in files:
                 name_no += 1
                 print name, name_no
-
                 f = codecs.open(os.path.join(root, name), 'r', 'utf-8')
                 raw = f.read()
                 f.close()
+                raw_len = len(raw.split())
                 tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
                 raw_ = tokenizer.tokenize(raw)
                 raw__ = self.remove_what2(raw_, self.keywords_js)
-                train_set.append(raw__)
-        return train_set
+                raw___ = [i for i in raw__ if len(i) > 1]
+                raw_len = len(raw.split(' '))
+                before_lst.append(raw_len)
+                train_set.append(raw___)
+                after_lst.append(len(raw___))
+
+        return train_set, before_lst, after_lst
         # raw = f.read()
         # word_list = list(jieba.cut(raw, cut_all=False))
         # train_set.append(word_list)
